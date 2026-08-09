@@ -519,6 +519,43 @@
             transform: translate(3px, -3px);
         }
 
+        .release {
+            padding: 22px 0 48px;
+        }
+
+        .release-notes {
+            display: grid;
+            grid-template-columns: minmax(130px, 0.22fr) 1fr;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .release-version {
+            padding: 24px 28px 24px 0;
+            border-right: 1px solid var(--line);
+            color: var(--green);
+            font-family: var(--display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        .release-notes ul {
+            display: grid;
+            min-width: 0;
+            gap: 9px;
+            margin: 0;
+            padding: 23px 0 23px 36px;
+            color: #bcbcbc;
+            line-height: 1.55;
+            overflow-wrap: anywhere;
+        }
+
+        .release-notes li::marker {
+            color: var(--green);
+        }
+
         .footer {
             display: flex;
             align-items: flex-start;
@@ -681,6 +718,19 @@
                 flex-direction: column;
                 gap: 14px;
             }
+
+            .release-notes {
+                grid-template-columns: 1fr;
+            }
+
+            .release-version {
+                padding: 18px 0 12px;
+                border-right: 0;
+            }
+
+            .release-notes ul {
+                padding: 6px 0 20px 20px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -790,7 +840,7 @@
 
                     <ul class="facts" aria-label="Product details">
                         <li>One-time purchase</li>
-                        <li>Version 1.0.0</li>
+                        <li>Version 1.0.1</li>
                         <li>By GTSX-3D</li>
                     </ul>
                 </div>
@@ -878,6 +928,28 @@
 
                         <span class="store-arrow" aria-hidden="true">↗</span>
                     </a>
+                </div>
+            </section>
+
+            <section class="release" aria-labelledby="release-heading">
+                <div class="section-heading">
+                    <h2 id="release-heading">Changelog</h2>
+                    <p>Latest release</p>
+                </div>
+
+                <div class="release-notes">
+                    <strong class="release-version">v1.0.1</strong>
+                    <ul>
+                        <li>
+                            Added the ability to stop a render before it finishes
+                            and keep the partially rendered image. The Show Render
+                            Preview checkbox must be enabled.
+                        </li>
+                        <li>
+                            Fixed incorrect failure notifications after stopping a
+                            render early.
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
