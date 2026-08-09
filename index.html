@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Render Queue Pro by GTSX-3D</title>
-    <meta name="description"
-          content="The official Render Queue Pro product link by GTSX-3D.">
-    <meta name="robots" content="noindex, follow">
+    <title>Get Render Queue Pro by GTSX-3D</title>
 
     <meta
-        http-equiv="refresh"
-        content="0; url=https://www.deviantart.com/gtsx-3d/art/Render-Queue-PRO-Daz-Studio-6-Plugin-1366312659"
+        name="description"
+        content="Choose where to purchase Render Queue Pro for Daz Studio 6 by GTSX-3D."
     >
+
+    <meta name="robots" content="noindex, follow">
 
     <style>
         :root {
@@ -38,16 +37,16 @@
                 ),
                 linear-gradient(135deg, #090c18, #181228);
             color: #ffffff;
-            text-align: center;
         }
 
         main {
-            width: min(560px, 100%);
+            width: min(820px, 100%);
             padding: 48px 32px;
             border: 1px solid rgba(255, 255, 255, 0.15);
             border-radius: 20px;
-            background: rgba(14, 16, 30, 0.9);
+            background: rgba(14, 16, 30, 0.92);
             box-shadow: 0 24px 80px rgba(0, 0, 0, 0.5);
+            text-align: center;
         }
 
         h1 {
@@ -55,40 +54,154 @@
             font-size: clamp(2rem, 7vw, 3.2rem);
         }
 
-        p {
-            margin: 0 0 26px;
+        .intro {
+            max-width: 620px;
+            margin: 0 auto 34px;
             color: #c9cce0;
+            font-size: 1.05rem;
             line-height: 1.6;
         }
 
-        a {
-            display: inline-block;
-            padding: 14px 24px;
+        .store-options {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .store-card {
+            display: flex;
+            flex-direction: column;
+            padding: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.05);
+            text-align: left;
+        }
+
+        .store-card:hover {
+            border-color: rgba(145, 133, 255, 0.7);
+            background: rgba(255, 255, 255, 0.075);
+        }
+
+        .store-name {
+            margin: 0;
+            color: #ffffff;
+            font-size: 1.35rem;
+        }
+
+        .price {
+            margin: 12px 0 8px;
+            color: #ffffff;
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .payment-note {
+            margin: 0 0 24px;
+            color: #c9cce0;
+            line-height: 1.5;
+        }
+
+        .store-link {
+            display: block;
+            width: 100%;
+            margin-top: auto;
+            padding: 14px 20px;
             border-radius: 10px;
             background: #7868ff;
             color: #ffffff;
             font-weight: 700;
+            text-align: center;
             text-decoration: none;
+            transition:
+                background-color 160ms ease,
+                transform 160ms ease;
         }
 
-        a:hover,
-        a:focus-visible {
+        .store-link:hover,
+        .store-link:focus-visible {
             background: #9185ff;
+            transform: translateY(-1px);
+        }
+
+        .store-link:focus-visible {
+            outline: 3px solid rgba(145, 133, 255, 0.45);
+            outline-offset: 3px;
+        }
+
+        .footer-note {
+            margin: 28px 0 0;
+            color: #9fa3bd;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 660px) {
+            main {
+                padding: 36px 20px;
+            }
+
+            .store-options {
+                grid-template-columns: 1fr;
+            }
+
+            .store-card {
+                padding: 24px;
+            }
         }
     </style>
 </head>
 
 <body>
     <main>
-        <h1>Render Queue Pro</h1>
+        <h1>Get Render Queue Pro</h1>
 
-        <p>
-            Redirecting you to the official GTSX-3D product page.
+        <p class="intro">
+            Choose your preferred storefront to purchase Render Queue Pro
+            for Daz Studio 6. Both options provide the same plug-in.
         </p>
 
-        <a href="https://www.deviantart.com/gtsx-3d/art/Render-Queue-PRO-Daz-Studio-6-Plugin-1366312659">
-            Continue to GTSX-3D
-        </a>
+        <div class="store-options">
+            <section class="store-card">
+                <h2 class="store-name">DeviantArt</h2>
+
+                <p class="price">$29.99</p>
+
+                <p class="payment-note">
+                    One-time purchase through DeviantArt.
+                </p>
+
+                <a
+                    class="store-link"
+                    href="https://www.deviantart.com/gtsx-3d/art/Render-Queue-PRO-Daz-Studio-6-Plugin-1366312659"
+                >
+                    Get it on DeviantArt
+                </a>
+            </section>
+
+            <section class="store-card">
+                <h2 class="store-name">RenderHub</h2>
+
+                <p class="price">$39.99</p>
+
+                <p class="payment-note">
+                    One-time purchase through RenderHub.
+                </p>
+
+                <a
+                    class="store-link"
+                    href="https://www.renderhub.com/gtsx-3d/gtsx-3d-s-render-queue-pro-for-daz-studio-6-1"
+                >
+                    Get it on RenderHub
+                </a>
+            </section>
+        </div>
+
+        <p class="footer-note">
+            Render Queue Pro is independently developed by GTSX-3D.
+            It is not affiliated with, sponsored by, or endorsed by Daz 3D.
+        </p>
     </main>
 </body>
 </html>
