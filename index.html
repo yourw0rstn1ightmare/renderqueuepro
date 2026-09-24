@@ -844,7 +844,7 @@
 
                     <ul class="facts" aria-label="Product details">
                         <li>One-time purchase</li>
-                        <li>Version 1.0.2</li>
+                        <li>Version 1.0.3</li>
                         <li>By GTSX-3D</li>
                     </ul>
                 </div>
@@ -939,6 +939,35 @@
                 <div class="section-heading">
                     <h2 id="release-heading">Changelog</h2>
                     <p>Latest release</p>
+                </div>
+
+                <div class="release-notes">
+                    <strong class="release-version">v1.0.3</strong>
+                    <ul>
+                        <li>
+                            Fixed automatic restarts failing with restart script error
+                            code 17 on heavy scenes. The queue now waits as long as
+                            DAZ Studio is still closing the scene, and only ends its
+                            own DAZ Studio window if it stops responding.
+                        </li>
+                        <li>
+                            DAZ Studio now reopens in the same instance after a
+                            restart, and each instance reopens its own queue.
+                        </li>
+                        <li>
+                            A restart problem no longer pauses the queue behind an
+                            error message. The queue tries again or keeps rendering in
+                            the current session.
+                        </li>
+                        <li>
+                            Error messages no longer freeze DAZ Studio while it clears
+                            a scene.
+                        </li>
+                        <li>
+                            The restart window now opens minimized and keeps a log of
+                            each step.
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="release-notes">
