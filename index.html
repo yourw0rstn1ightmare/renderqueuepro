@@ -523,6 +523,10 @@
             padding: 22px 0 48px;
         }
 
+        .release-notes + .release-notes {
+            border-top: 0;
+        }
+
         .release-notes {
             display: grid;
             grid-template-columns: minmax(130px, 0.22fr) 1fr;
@@ -840,7 +844,7 @@
 
                     <ul class="facts" aria-label="Product details">
                         <li>One-time purchase</li>
-                        <li>Version 1.0.1</li>
+                        <li>Version 1.0.2</li>
                         <li>By GTSX-3D</li>
                     </ul>
                 </div>
@@ -935,6 +939,19 @@
                 <div class="section-heading">
                     <h2 id="release-heading">Changelog</h2>
                     <p>Latest release</p>
+                </div>
+
+                <div class="release-notes">
+                    <strong class="release-version">v1.0.2</strong>
+                    <ul>
+                        <li>
+                            Fixed the queue stopping with &ldquo;DAZ Studio loaded a
+                            different scene than the active queue job&rdquo; after an
+                            automatic restart when DAZ Studio is set to load a
+                            startup scene. The queue now waits for DAZ Studio to
+                            finish starting up before opening the next scene.
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="release-notes">
