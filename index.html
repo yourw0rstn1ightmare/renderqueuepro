@@ -844,7 +844,7 @@
 
                     <ul class="facts" aria-label="Product details">
                         <li>One-time purchase</li>
-                        <li>Version 1.0.3</li>
+                        <li>Version 1.0.4</li>
                         <li>By GTSX-3D</li>
                     </ul>
                 </div>
@@ -939,6 +939,37 @@
                 <div class="section-heading">
                     <h2 id="release-heading">Changelog</h2>
                     <p>Latest release</p>
+                </div>
+
+                <div class="release-notes">
+                    <strong class="release-version">v1.0.4</strong>
+                    <ul>
+                        <li>
+                            Added a build for DAZ Studio 6.26 and newer. DAZ Studio
+                            6.26 refused earlier versions with &ldquo;made for an
+                            unsupported version of Daz Studio&rdquo;. Download the
+                            package that matches your DAZ Studio version.
+                        </li>
+                        <li>
+                            Fixed &ldquo;DAZ Studio loaded a different scene than the
+                            active queue job&rdquo; still appearing after a restart
+                            when DAZ Studio loads a startup scene. If DAZ Studio
+                            replaces the queued scene, the queue now opens it again
+                            instead of failing the row.
+                        </li>
+                        <li>
+                            The blank-image check now recognizes fully transparent
+                            images, which is how a failed Iray render is saved as
+                            PNG, and no longer mistakes the normal GPU log lines of
+                            a healthy render for an error.
+                        </li>
+                        <li>
+                            Notifications: &ldquo;Every success&rdquo; now includes
+                            renders that completed with warnings, and a restart
+                            that can no longer be monitored or a queue that cannot
+                            be saved now notifies as well.
+                        </li>
+                    </ul>
                 </div>
 
                 <div class="release-notes">
